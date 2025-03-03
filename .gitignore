@@ -1,0 +1,4 @@
+.env
+node_modules/
+venv/
+wow_reviews_1months.json

@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/blait/game-review-crawler#readme",
   "dependencies": {
-    "chrome-aws-lambda": "^10.1.0",
-    "puppeteer-core": "^24.2.1"
+    "puppeteer": "^10.1.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }

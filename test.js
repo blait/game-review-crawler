@@ -24,7 +24,7 @@ async function crawlRecentPosts(monthsBack = 1, maxPages = 5) {
       }
     });
 
-    const baseUrl = 'https://gall.dcinside.com/board/lists/?id=wow_new3';
+    const baseUrl = 'https://gall.dcinside.com/mgallery/board/lists/?id=mhw';
     const today = new Date('2025-02-24');
     const pastDate = new Date(today);
     pastDate.setMonth(today.getMonth() - monthsBack);
@@ -102,7 +102,7 @@ async function crawlRecentPosts(monthsBack = 1, maxPages = 5) {
     }
 
     // JSON 파일로 저장
-    const outputFile = `wow_reviews_${monthsBack}months.json`;
+    const outputFile = `mh_reviews_${monthsBack}months.json`;
     fs.writeFileSync(outputFile, JSON.stringify(results, null, 2));
     console.log(`최근 ${monthsBack}개월 게시글 수: ${results.length}`);
     console.log(`결과가 ${outputFile}에 저장되었습니다.`);
